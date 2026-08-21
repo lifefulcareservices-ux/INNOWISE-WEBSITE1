@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
 import BackToTop from "@/components/BackToTop";
 import ScrollProgress from "@/components/ScrollProgress";
+import { Analytics } from "@vercel/analytics/next";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -92,6 +93,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <CookieConsent />
         <BackToTop />
+        <Analytics />
       </body>
     </html>
   );
