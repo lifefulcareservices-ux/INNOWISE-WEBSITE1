@@ -7,6 +7,7 @@ import CookieConsent from "@/components/CookieConsent";
 import BackToTop from "@/components/BackToTop";
 import ScrollProgress from "@/components/ScrollProgress";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -94,6 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CookieConsent />
         <BackToTop />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
